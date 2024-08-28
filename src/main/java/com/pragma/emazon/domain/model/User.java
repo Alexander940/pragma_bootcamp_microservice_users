@@ -6,7 +6,7 @@ public class User {
     private Long id;
     private String name;
     private String lastname;
-    private Integer documentID;
+    private String documentID;
     private String phone;
     private Calendar birthday;
     private String email;
@@ -35,7 +35,7 @@ public class User {
         private Long id;
         private String name;
         private String lastname;
-        private Integer documentID;
+        private String documentID;
         private String phone;
         private Calendar birthday;
         private String email;
@@ -60,7 +60,7 @@ public class User {
             return this;
         }
 
-        public Builder documentID(Integer documentID) {
+        public Builder documentID(String documentID) {
             this.documentID = documentID;
             return this;
         }
@@ -134,11 +134,11 @@ public class User {
         this.lastname = lastname;
     }
 
-    public Integer getDocumentID() {
+    public String getDocumentID() {
         return documentID;
     }
 
-    public void setDocumentID(Integer documentID) {
+    public void setDocumentID(String documentID) {
         this.documentID = documentID;
     }
 

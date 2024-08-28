@@ -26,7 +26,7 @@ public class UserEntity {
     private String lastname;
 
     @Column(name = "documentID", nullable = false)
-    private Integer documentID;
+    private String documentID;
 
     @Size(max = 13)
     @Column(name = "phone", nullable = false)
