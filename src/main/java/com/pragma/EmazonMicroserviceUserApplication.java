@@ -1,4 +1,4 @@
-package com.example.pragma;
+package com.pragma;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
