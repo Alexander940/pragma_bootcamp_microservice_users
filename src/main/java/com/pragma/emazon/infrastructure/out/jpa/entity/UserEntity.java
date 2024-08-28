@@ -13,7 +13,7 @@ import java.util.Calendar;
 @NoArgsConstructor
 @Data
 @Table(name = "User")
-public class User {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -49,5 +49,5 @@ public class User {
 
     @ManyToOne
     @JoinColumn(name = "roleuniqueid", nullable = false)
-    private Role role;
+    private RoleEntity role;
 }
