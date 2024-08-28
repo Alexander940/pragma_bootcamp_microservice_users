@@ -1,4 +1,4 @@
-package com.example.pragma;
+package com.pragma.emazon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
