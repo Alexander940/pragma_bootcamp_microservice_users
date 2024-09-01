@@ -1,5 +1,7 @@
 package com.pragma.emazon.application.dto;
 
+import com.pragma.emazon.domain.model.Role;
+
 import java.io.Serializable;
 import java.util.Calendar;
 
@@ -8,10 +10,11 @@ public record UserResponse(
         String lastname,
         String documentID,
         String phone,
-        String email,
         Calendar birthday,
+        String email,
+        String password,
         Integer locked,
         Integer disabled,
-        String roleName
+        Role role
 ) implements Serializable {
 }

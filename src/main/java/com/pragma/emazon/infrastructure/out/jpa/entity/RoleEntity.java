@@ -11,10 +11,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "role")
+@Table(name = "roles")
 public class RoleEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "UniqueID")
     private Long id;
 

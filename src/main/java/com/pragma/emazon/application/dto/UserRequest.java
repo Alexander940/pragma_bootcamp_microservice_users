@@ -1,5 +1,6 @@
 package com.pragma.emazon.application.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Size;
 import lombok.NonNull;
 
@@ -17,6 +18,7 @@ public record UserRequest(
         @Size(max = 13)
         String phone,
         @NonNull
+        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
         Calendar birthday,
         @NonNull
         String email,

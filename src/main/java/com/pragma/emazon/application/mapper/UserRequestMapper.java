@@ -10,5 +10,22 @@ import org.mapstruct.ReportingPolicy;
         unmappedSourcePolicy = ReportingPolicy.IGNORE)
 public interface UserRequestMapper {
 
-    User toUser(UserRequest userRequest);
+    default User toUser(UserRequest userRequest){
+        if (userRequest == null) return null;
+
+        User.Builder builder = new User.Builder();
+
+        builder.name(userRequest.name())
+                .lastname(userRequest.lastname())
+                .documentID(userRequest.documentID())
+                .phone(userRequest.phone())
+                .email(userRequest.email())
+                .password(userRequest.password())
+                .roleName(userRequest.roleName())
+                .birthday(userRequest.birthday())
+                .disabled(userRequest.disabled())
+                .locked(userRequest.locked());
+
+        return builder.build();
+    }
 }

@@ -5,7 +5,6 @@ import com.pragma.emazon.application.dto.UserResponse;
 import com.pragma.emazon.application.mapper.UserRequestMapper;
 import com.pragma.emazon.application.mapper.UserResponseMapper;
 import com.pragma.emazon.domain.api.IUserServicePort;
-import com.pragma.emazon.domain.model.User;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

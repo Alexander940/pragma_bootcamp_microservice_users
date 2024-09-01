@@ -12,11 +12,12 @@ import java.util.Calendar;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "User")
+@Table(name = "users")
 public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "UniqueID")
     private Long id;
 
     @Column(name = "name", nullable = false)
